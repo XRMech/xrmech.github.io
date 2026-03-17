@@ -169,6 +169,92 @@
     </div>
   </section>
 
+  <!-- Side Projects -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section-heading">What I Build for Fun</h2>
+      <p class="section-subheading">When I'm not on contract I'm usually building something computationally interesting.</p>
+      <div class="side-projects-grid">
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">StockMaster</h3>
+          <p class="side-project-desc">
+            Algorithmic trading platform with a political intelligence layer — detects
+            information asymmetry by monitoring politician trading patterns against market
+            movements. ML stack covers PyTorch LSTM and Transformer models (GPU/CUDA),
+            XGBoost, scikit-learn, and Prophet for time series. 184 symbols across 11
+            tiers, circuit breakers, backtesting engine, paper trading via Alpaca API.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">CUDA</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Celery</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">DupliCleaner</h3>
+          <p class="side-project-desc">
+            Intelligent duplicate file detection for NAS storage. Goes well beyond checksum
+            matching — perceptual hashing for near-duplicates, InsightFace/ArcFace for face
+            recognition and clustering, CLIP for scene classification, YOLOv8 for object
+            detection, EasyOCR for text. Organizes photos by EXIF date, GPS location, and
+            event clustering. 341+ test cases, quarantine mode, full undo support.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">CLIP</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">InsightFace</span>
+            <span class="tag">Dear PyGui</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">HablaTranslate</h3>
+          <p class="side-project-desc">
+            Self-hosted real-time bidirectional Spanish/English speech translator running
+            entirely on local hardware. WhisperX for ASR, Qwen3 via Ollama for
+            context-aware translation (better idiom handling than Google Translate),
+            Pyannote for speaker diarization, Silero VAD. Steady-state ~5GB VRAM.
+            Vocabulary capture with SM-2 spaced repetition and Anki export.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">WhisperX</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Local LLM</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">DyslexiaReader</h3>
+          <p class="side-project-desc">
+            KMM app for children ages 6–10 with dyslexia. Speech-to-text validates oral
+            reading in real-time using Android SpeechRecognizer with Vosk offline fallback.
+            Custom AlignmentEngine handles dyslexia-aware phonetic matching (b/d, a/e
+            confusion tolerance) and tracks misread types. AI-generated stories via OpenAI,
+            SM-2 spaced repetition for sight words, COPPA/GDPR compliant.
+          </p>
+          <div class="tags">
+            <span class="tag">KMM</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">Vosk STT</span>
+            <span class="tag">OpenAI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Available For -->
   <section class="section section--alt">
     <div class="container">
