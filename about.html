@@ -251,6 +251,167 @@
           </div>
         </div>
 
+        <div class="side-project-card">
+          <h3 class="side-project-title">Scene-Recorder</h3>
+          <p class="side-project-desc">
+            Multi-platform video capture utility for Unity. Native C++ plugin (stb_image_write)
+            handles threaded JPG/PNG encoding off the main thread via JNI on Android and
+            DllImport on Windows. AsyncGPUReadback pipeline avoids GPU stalls. Full WebRTC
+            streaming path — RTCPeerConnection, SDP offer/answer, ICE candidates, DataChannel
+            frame transmission. Node.js signaling server with FFmpeg video compilation,
+            Docker deployed.
+          </p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">C++</span>
+            <span class="tag">WebRTC</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">AR Remote Desktop Streaming</h3>
+          <p class="side-project-desc">
+            Unity client that streams a live PC desktop to AR glasses with remote mouse
+            control. FMETP_STREAM for low-latency desktop broadcasting, AVPro Video for
+            playback in headset. Cursor tracking with canvas scaling, remote mouse movement,
+            resolution matching. Runs on Meta Quest and HoloLens 2 from a single codebase.
+          </p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">HoloLens 2</span>
+            <span class="tag">Meta Quest</span>
+            <span class="tag">AVPro</span>
+            <span class="tag">FMETP</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">Decentraland VR Client</h3>
+          <p class="side-project-desc">
+            Added VR capabilities to the Decentraland.org metaverse. Used Vuplex Webview
+            to bridge Unity and the Decentraland kernel, added VR controller interactions,
+            and modified UI elements for headset use. Optimized for Quest 2 Android builds.
+            Provided ongoing support through 2023.
+          </p>
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Meta Quest</span>
+            <span class="tag">Vuplex</span>
+            <span class="tag">Web3</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">PromoVideoGenerator</h3>
+          <p class="side-project-desc">
+            Electron desktop app for generating promotional videos. React 19 + TypeScript
+            frontend, Remotion for programmatic video rendering, Claude API for content
+            generation, AWS Polly for text-to-speech narration. SQLite local database.
+          </p>
+          <div class="tags">
+            <span class="tag">Electron</span>
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Remotion</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">AWS Polly</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">YarnworksKMM</h3>
+          <p class="side-project-desc">
+            Kotlin Multiplatform app targeting Android, iOS, and Desktop from a single
+            codebase. Pattern template engine with row ranges, repeats, and conditions.
+            Hat and sock generators across 8 sizes. 2D chart rendering with stitch symbol
+            catalog, LCM-based gauge math, instruction generation in 4 formats. Voice
+            command framework for hands-free use. FEA-based fabric simulation solver
+            in progress.
+          </p>
+          <div class="tags">
+            <span class="tag">KMP</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Compose Multiplatform</span>
+            <span class="tag">SwiftUI</span>
+            <span class="tag">Desktop</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hardware & Tinkering -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading">Hardware &amp; Tinkering</h2>
+      <p class="section-subheading">I build physical things too.</p>
+      <div class="side-projects-grid">
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">3D Plotter &amp; Delta Robot</h3>
+          <p class="side-project-desc">
+            Built a 3D plotter and delta robot platform from scratch — Arduino, C++,
+            and custom PCBs. Designed and etched the boards myself. The delta robot
+            was an exercise in inverse kinematics and precision motion control on
+            constrained hardware.
+          </p>
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">C++</span>
+            <span class="tag">Custom PCBs</span>
+            <span class="tag">Kinematics</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">Bluetooth Robot</h3>
+          <p class="side-project-desc">
+            Miniature Bluetooth-controlled wheeled robot built for my niece. Arduino
+            brain, custom etched PCBs, Bluetooth control from a phone. The constraint
+            of making it small, reliable, and fun for a kid to drive was the interesting
+            engineering problem.
+          </p>
+          <div class="tags">
+            <span class="tag">Arduino</span>
+            <span class="tag">C++</span>
+            <span class="tag">Bluetooth</span>
+            <span class="tag">Custom PCBs</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">ESP8266 Hot Tub Controller</h3>
+          <p class="side-project-desc">
+            Replaced the hot tub's timer with an ESP8266 and a small web interface
+            for phone control. Temperature monitoring, scheduling, and remote on/off.
+          </p>
+          <div class="tags">
+            <span class="tag">ESP8266</span>
+            <span class="tag">C++</span>
+            <span class="tag">Web Interface</span>
+            <span class="tag">IoT</span>
+          </div>
+        </div>
+
+        <div class="side-project-card">
+          <h3 class="side-project-title">Physics Experiments</h3>
+          <p class="side-project-desc">
+            Built a hydrogen generator and a Jacob's ladder for high-voltage arc
+            experiments — holdovers from a physics background.
+          </p>
+          <div class="tags">
+            <span class="tag">Electronics</span>
+            <span class="tag">High Voltage</span>
+            <span class="tag">Physics</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
