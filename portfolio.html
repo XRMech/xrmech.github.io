@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Clint Campbell</title>
+  <meta name="description" content="Production work across mobile, AI, mixed reality, and full stack by Clint Campbell.">
+  <meta property="og:title" content="Portfolio — Clint Campbell">
+  <meta property="og:description" content="Production work across mobile, AI, mixed reality, and full stack.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="images/XR Mech Logo 512512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/XR Mech Logo Transparent Long.png" alt="XR Mech" class="nav-logo">
+        <span class="nav-brand-text">Clint Campbell</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p>Production work across mobile, AI, mixed reality, and full stack.</p>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 1: StoryTime Language -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/storytime-screenshot.png" alt="StoryTime Language app UI showing Create a Story screen">
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">KMM</span>
+            <span class="tag">Android</span>
+            <span class="tag">iOS</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">AI</span>
+          </div>
+          <h2 class="portfolio-title">StoryTime Language</h2>
+          <p class="portfolio-subtitle">Live on Google Play &amp; iOS App Store</p>
+          <p class="portfolio-desc">
+            Cross-platform language learning app built with Kotlin Multiplatform — one shared
+            codebase for Android (Jetpack Compose) and iOS (SwiftUI). The Node.js/Express
+            backend runs on Digital Ocean and integrates OpenAI GPT-4, Claude, and Gemini
+            for AI-generated stories in 100 languages across 130 dialects.
+          </p>
+          <p class="portfolio-desc">
+            In-app purchases (Google Play Billing + StoreKit), Firebase Auth, offline-first
+            architecture with SQLDelight, and real-time story streaming via SSE.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://storytimelanguage.com" target="_blank" rel="noopener" class="btn btn-primary">→ storytimelanguage.com</a>
+            <a href="https://play.google.com/store/apps/details?id=com.xrmech.storytimelanguage" target="_blank" rel="noopener" class="btn btn-secondary">→ Google Play</a>
+            <a href="https://apps.apple.com/app/storytime-language/id6740305574" target="_blank" rel="noopener" class="btn btn-secondary">→ App Store</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2: LimitlessVR -->
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">HTC Vive</span>
+            <span class="tag">Photon</span>
+            <span class="tag">Multiplayer</span>
+            <span class="tag">XR</span>
+          </div>
+          <h2 class="portfolio-title">LimitlessVR</h2>
+          <p class="portfolio-subtitle">IAAPA 2022 Brass Ring Award — Best New Product · Still in active deployment</p>
+          <p class="portfolio-desc">
+            100% free-roam multiplayer VR laser tag system — no PCs, no backpacks, no
+            tethers. Built for Creative Works, who funds and distributes the product to
+            their global network of Family Entertainment Centers in 6, 8, and 16-player
+            venue configurations.
+          </p>
+          <p class="portfolio-desc">
+            Developed the precision player alignment system (ManuVR's MVR tracking
+            platform) that maps virtual play spaces to physical laser tag arenas, allowing
+            players to roam freely without positional drift. Implemented Photon network
+            communications for real-time multiplayer across themed environments and
+            engineered safety systems with precise spatial mappings. Shipped with HTC Vive
+            Focus 3 headsets and Vive trackers.
+          </p>
+          <p class="portfolio-desc">
+            Product continues to receive active updates — new maps and game modes announced
+            at IAAPA Expo 2025.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://limitlessvr.com" target="_blank" rel="noopener" class="btn btn-secondary">→ limitlessvr.com</a>
+            <a href="https://www.manuvr.tech/limitlessvr.html" target="_blank" rel="noopener" class="btn btn-secondary">→ ManuVR</a>
+            <a href="https://youtu.be/WSE08W0XFhc" target="_blank" rel="noopener" class="btn-demo">▶ Watch Demo — Gameplay</a>
+            <a href="https://youtu.be/OG4BhKE9zl8" target="_blank" rel="noopener" class="btn-demo">▶ Watch Demo — Arena Overview</a>
+          </div>
+        </div>
+        <div class="portfolio-media">
+          <img src="images/limitless-vr-action.png" alt="LimitlessVR player aiming in HTC Vive headset with LIMITLESS branding visible">
+        </div>
+      </article>
+
+      <!-- 3: ARCS Aviation -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/arcs-aviation-1.png" alt="ARCS Aviation HoloLens 2 showing floating UI inspection panels in AR">
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">HoloLens 2</span>
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">Industrial</span>
+            <span class="tag">Ongoing</span>
+          </div>
+          <h2 class="portfolio-title">ARCS Aviation XR Inspection Suite</h2>
+          <p class="portfolio-subtitle">Industrial AR for aerospace inspection — ongoing contract</p>
+          <p class="portfolio-desc">
+            Ongoing contract building a unified multi-module XR inspection platform for
+            aerospace maintenance. Combines terahertz paint thickness scanning, NDI inspection,
+            and additional inspection types into a single HoloLens 2 application with
+            centralized data management and seamless tool switching.
+          </p>
+          <p class="portfolio-desc">
+            Earlier work included integrating scan data visualization, COM port device
+            communication, and migrating video streaming from Python to .NET.
+          </p>
+        </div>
+      </article>
+
+      <!-- 4: Sira Medical -->
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">HoloLens 2</span>
+            <span class="tag">Medical</span>
+            <span class="tag">FDA</span>
+          </div>
+          <h2 class="portfolio-title">Sira Medical — Surgical Pre-Operative Planning Tool</h2>
+          <p class="portfolio-subtitle">Unity3D · FDA submission support</p>
+          <p class="portfolio-desc">
+            Took a proof-of-concept Unity project to a functional FDA-compliant surgical
+            pre-operative planning tool for HoloLens 2. Rewrote third-party model-splitting
+            tools to handle 2GB+ medical files, implemented OneDrive OAuth2.0 after Microsoft
+            discontinued UWP support, and assisted with FDA submission documentation.
+          </p>
+          <p class="portfolio-desc">
+            Conducted a metrological study for HoloLens display assessment as part of the
+            FDA approval process.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://siramedical.com/preoperative-planning/" target="_blank" rel="noopener" class="btn btn-secondary">→ Client Site</a>
+            <a href="https://youtu.be/5HVi_692J3I" target="_blank" rel="noopener" class="btn-demo">▶ CT, MR, DTI Fused Model in AR</a>
+            <a href="https://youtu.be/wkgkXzyu32E" target="_blank" rel="noopener" class="btn-demo">▶ Mandibular Condyle Fracture in AR</a>
+          </div>
+        </div>
+        <div class="portfolio-media">
+          <img src="images/Surgical-Planning-new-image.png" alt="Sira Medical pre-operative planning tool showing 3D mandibular anatomy in HoloLens AR">
+        </div>
+      </article>
+
+      <!-- 5: CoralXDS -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/coralxds-screenshot.png" alt="CoralXDS WPF application showing coral X-ray analysis interface">
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">.NET 8</span>
+            <span class="tag">WPF</span>
+            <span class="tag">C# 12</span>
+            <span class="tag">Scientific</span>
+            <span class="tag">Arc.dev</span>
+          </div>
+          <h2 class="portfolio-title">CoralXDS — Nova Southeastern University</h2>
+          <p class="portfolio-subtitle">Legacy modernization · Arc.dev contract</p>
+          <p class="portfolio-desc">
+            Migrated a legacy VB6 + Fortran scientific desktop application (CoralXDS) to
+            modern C# 12 / .NET 8 / WPF for Nova Southeastern University's climate research
+            team. The app analyzes X-ray images of coral skeletons to measure growth patterns
+            and density.
+          </p>
+          <p class="portfolio-desc">
+            Built with Math.NET Numerics for scientific computing, ScottPlot for data
+            visualization, and EPPlus for Excel export. MVVM + Dependency Injection
+            architecture, xUnit test suite, 122 C# files.
+          </p>
+        </div>
+      </article>
+
+      <!-- 6: Palantir IC2 -->
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Meta Quest</span>
+            <span class="tag">Photon</span>
+            <span class="tag">Cesium</span>
+            <span class="tag">XR</span>
+          </div>
+          <h2 class="portfolio-title">Palantir IC2 — Collaborative Map Planning Tool</h2>
+          <p class="portfolio-subtitle">Mixed reality · multi-user · Cesium maps</p>
+          <p class="portfolio-desc">
+            Developed a collaborative mixed reality map planning application for Meta Quest.
+            Integrated Cesium maps for real-world geospatial data, Photon networking and
+            voice for multi-user sessions, and Meta Spatial Anchors enabling both co-located
+            and remote collaboration.
+          </p>
+          <p class="portfolio-desc">
+            Built custom measurement tools (elevation and distance), developed shaders for
+            map culling, and implemented synchronization through Photon room custom settings.
+          </p>
+        </div>
+        <div class="portfolio-media">
+          <img src="images/PalantirIC2.jpg" alt="Palantir IC2 collaborative map planning tool on Meta Quest">
+        </div>
+      </article>
+
+      <!-- 7: AI Customer Support Platform (renumbered — Verbilio removed, not yet released) -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="tag">Python</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LLM</span>
+            <span class="tag">Fine-tuning</span>
+          </div>
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">LLM</span>
+            <span class="tag">RAG</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Claude API</span>
+            <span class="tag">Fine-tuning</span>
+          </div>
+          <h2 class="portfolio-title">AI Customer Support Platform</h2>
+          <p class="portfolio-subtitle">LLM fine-tuning + RAG system</p>
+          <p class="portfolio-desc">
+            Custom chatbot platform built for first-tier game support. Multi-model
+            architecture supporting OpenAI fine-tuned models, Claude API, and local
+            models via LMStudio — switchable via file config with no code changes.
+          </p>
+          <p class="portfolio-desc">
+            RAG system with document ingestion, conversation storage, user feedback
+            collection for continuous fine-tuning improvement, and a custom agent
+            layer for automated log gathering and action execution.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <img src="images/XR Mech Logo Transparent Long.png" alt="XR Mech" class="footer-logo">
+      <div class="footer-links">
+        <a href="https://github.com/xrmech" target="_blank" rel="noopener">github.com/xrmech</a>
+        <a href="https://linkedin.com/in/clintjcampbell" target="_blank" rel="noopener">linkedin.com/in/clintjcampbell</a>
+        <a href="mailto:xrmechsolutions@gmail.com">xrmechsolutions@gmail.com</a>
+      </div>
+      <p class="footer-copy">&copy;2026 Clint Campbell</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
