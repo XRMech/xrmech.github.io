@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — Clint Campbell</title>
-  <meta name="description" content="Production work across mobile, AI, mixed reality, and full stack by Clint Campbell.">
-  <meta property="og:title" content="Portfolio — Clint Campbell">
-  <meta property="og:description" content="Production work across mobile, AI, mixed reality, and full stack.">
+  <title>Work · Clint Campbell</title>
+  <meta name="description" content="Perception, computer vision and XR work by Clint Campbell: AR headsets, scientific imaging, VR arenas, HoloLens inspection tools and open-source projects.">
+  <meta property="og:title" content="Work · Clint Campbell">
+  <meta property="og:description" content="AR headset perception, scientific imaging, VR arenas, HoloLens inspection tools and open-source projects.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xrmech.github.io/portfolio.html">
   <link rel="icon" type="image/png" href="images/XR Mech Logo 512512.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
       </button>
       <nav class="nav-links" id="nav-links" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="portfolio.html" class="active">Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -38,245 +39,386 @@
   <!-- Page Header -->
   <div class="page-header">
     <div class="container">
-      <h1>Portfolio</h1>
-      <p>Production work across mobile, AI, mixed reality, and full stack.</p>
+      <h1>Work</h1>
+      <p>Client work first, then open source, products, and the Boeing years.</p>
     </div>
   </div>
 
-  <!-- Projects -->
   <section class="section">
     <div class="container">
 
-      <!-- 1: StoryTime Language -->
+      <!-- ===================== Client work ===================== -->
+      <h2 class="work-group-heading">Client work</h2>
+
+      <!-- Rivet -->
       <article class="portfolio-entry">
         <div class="portfolio-media">
-          <img src="images/storytime-screenshot.png" alt="StoryTime Language app UI showing Create a Story screen">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">AR headset perception</span>
+          </div>
         </div>
         <div class="portfolio-text">
           <div class="tags">
-            <span class="tag">KMM</span>
-            <span class="tag">Android</span>
-            <span class="tag">iOS</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">AI</span>
+            <span class="tag">Unity</span>
+            <span class="tag">StereoKit</span>
+            <span class="tag">OpenXR</span>
+            <span class="tag">Android NDK</span>
+            <span class="tag">C++</span>
+            <span class="tag">TFLite</span>
           </div>
-          <h2 class="portfolio-title">StoryTime Language</h2>
-          <p class="portfolio-subtitle">Live on Google Play (iOS build paused)</p>
+          <h2 class="portfolio-title">AR headsets for defense &amp; industrial use</h2>
+          <p class="portfolio-subtitle">Rivet Industries · Developer (Contract) · Apr – Oct 2026</p>
           <p class="portfolio-desc">
-            Cross-platform language learning app built with Kotlin Multiplatform — one shared
-            codebase for Android (Jetpack Compose) and iOS (SwiftUI). The Node.js/Express
-            backend runs on Digital Ocean and integrates OpenAI GPT-4, Claude, and Gemini
-            for AI-generated stories in 100 languages across 130 dialects.
+            Contract engineer on the perception and applied software teams for AR headsets
+            used in defense and industrial settings, building features, capabilities and
+            the demos that show them off.
           </p>
           <p class="portfolio-desc">
-            In-app purchases (Google Play Billing + StoreKit), Firebase Auth, offline-first
-            architecture with SQLDelight, and real-time story streaming via SSE.
+            Areas: headset and camera calibration, camera access and perception tooling,
+            hand and object tracking, on-device ML, voice command interfaces, and device
+            profiling. On-site in San Jose from April to July 2026, then remote from Spain.
           </p>
-          <div class="portfolio-links">
-            <a href="https://storytimelanguage.com" target="_blank" rel="noopener" class="btn btn-primary">→ storytimelanguage.com</a>
-            <a href="https://play.google.com/store/apps/details?id=com.xrmech.storytimelanguage" target="_blank" rel="noopener" class="btn btn-secondary">→ Google Play</a>
-          </div>
         </div>
       </article>
 
-      <!-- 2: LimitlessVR -->
+      <!-- CoralXDS -->
       <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Computer Vision</span>
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">WPF</span>
+            <span class="tag">ONNX</span>
+          </div>
+          <h2 class="portfolio-title">Coral X-ray imaging</h2>
+          <p class="portfolio-subtitle">Nova Southeastern University · Part-time contract through Arc · 2026</p>
+          <p class="portfolio-desc">
+            Rebuilt a legacy VB6 and Fortran research application as a .NET desktop app,
+            then took it well past the original. It measures growth, density and
+            calcification from X-ray images of coral skeletons for climate research, and
+            it's in use in the lead scientist's lab ahead of a public release.
+          </p>
+          <ul class="portfolio-list">
+            <li>Density calibration from wedge standards, with warnings when readings drift</li>
+            <li>Automated band detection with four boundary methods</li>
+            <li>3D scan registration: reads PLY, STL and OBJ scans of coral slabs, registers them to the X-ray, and corrects density for the real thickness</li>
+            <li>A prototype U-Net (ONNX, CPU inference) that predicts growth direction across the X-ray to guide band tracing</li>
+            <li>Experimental scatter correction, a batch and command-line pipeline, and reports with processing provenance</li>
+          </ul>
+        </div>
+        <div class="portfolio-media">
+          <img src="images/coralxds-screenshot.png" alt="Coral X-ray analysis app showing a coral slab X-ray and analysis panels">
+        </div>
+      </article>
+
+      <!-- LimitlessVR -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/limitless-vr-action.png" alt="LimitlessVR player aiming in an HTC Vive headset">
+        </div>
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">HTC Vive</span>
             <span class="tag">Photon</span>
-            <span class="tag">Multiplayer</span>
-            <span class="tag">XR</span>
+            <span class="tag">Meta Spatial Anchors</span>
           </div>
           <h2 class="portfolio-title">LimitlessVR</h2>
-          <p class="portfolio-subtitle">IAAPA 2022 Brass Ring Award — Best New Product · Still in active deployment</p>
+          <p class="portfolio-subtitle">Ong Innovations · IAAPA 2022 Brass Ring Award, Best New Product</p>
           <p class="portfolio-desc">
-            100% free-roam multiplayer VR laser tag system — no PCs, no backpacks, no
-            tethers. Built for Creative Works, who funds and distributes the product to
-            their global network of Family Entertainment Centers in 6, 8, and 16-player
-            venue configurations.
+            Free-roam VR for laser tag arenas, with the virtual space aligned to the
+            physical one. I built the player alignment system, plus tracking-lost
+            detection before the headset SDK offered it.
           </p>
           <p class="portfolio-desc">
-            Developed the precision player alignment system (ManuVR's MVR tracking
-            platform) that maps virtual play spaces to physical laser tag arenas, allowing
-            players to roam freely without positional drift. Implemented Photon network
-            communications for real-time multiplayer across themed environments and
-            engineered safety systems with precise spatial mappings. Shipped with HTC Vive
-            Focus 3 headsets and Vive trackers.
-          </p>
-          <p class="portfolio-desc">
-            Product continues to receive active updates — new maps and game modes announced
-            at IAAPA Expo 2025.
+            Also Photon multiplayer, safety systems and spatial mapping, a server for Meta
+            spatial anchor IDs (after working out undocumented limits in Meta's then-new
+            shared anchors), and large-area HTC Vive tracker setups spread across multiple PCs.
           </p>
           <div class="portfolio-links">
             <a href="https://limitlessvr.com" target="_blank" rel="noopener" class="btn btn-secondary">→ limitlessvr.com</a>
-            <a href="https://www.manuvr.tech/limitlessvr.html" target="_blank" rel="noopener" class="btn btn-secondary">→ ManuVR</a>
-            <a href="https://youtu.be/WSE08W0XFhc" target="_blank" rel="noopener" class="btn-demo">▶ Watch Demo — Gameplay</a>
-            <a href="https://youtu.be/OG4BhKE9zl8" target="_blank" rel="noopener" class="btn-demo">▶ Watch Demo — Arena Overview</a>
+            <a href="https://youtu.be/WSE08W0XFhc" target="_blank" rel="noopener" class="btn-demo">Gameplay video</a>
+            <a href="https://youtu.be/OG4BhKE9zl8" target="_blank" rel="noopener" class="btn-demo">Arena overview video</a>
           </div>
-        </div>
-        <div class="portfolio-media">
-          <img src="images/limitless-vr-action.png" alt="LimitlessVR player aiming in HTC Vive headset with LIMITLESS branding visible">
         </div>
       </article>
 
-      <!-- 3: ARCS Aviation -->
-      <article class="portfolio-entry">
-        <div class="portfolio-media">
-          <img src="images/arcs-aviation-1.png" alt="ARCS Aviation HoloLens 2 showing floating UI inspection panels in AR">
-        </div>
+      <!-- ARCS -->
+      <article class="portfolio-entry portfolio-entry--reverse">
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">HoloLens 2</span>
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">.NET</span>
-            <span class="tag">Industrial</span>
-            <span class="tag">Ongoing</span>
+            <span class="tag">MRTK</span>
           </div>
-          <h2 class="portfolio-title">ARCS Aviation XR Inspection Suite</h2>
-          <p class="portfolio-subtitle">Industrial AR for aerospace inspection — ongoing contract</p>
+          <h2 class="portfolio-title">ARCS Aviation inspection suite</h2>
+          <p class="portfolio-subtitle">Industrial AR for aircraft inspection</p>
           <p class="portfolio-desc">
-            Ongoing contract building a unified multi-module XR inspection platform for
-            aerospace maintenance. Combines terahertz paint thickness scanning, NDI inspection,
-            and additional inspection types into a single HoloLens 2 application with
-            centralized data management and seamless tool switching.
+            HoloLens 2 apps that map terahertz paint-thickness and NDI inspection data onto
+            3D points on the aircraft. The paint scanner head is tracked relative to the
+            aircraft with QR codes; the NDI device's screen is mirrored into the headset over
+            COM port and a video stream so the inspector can work hands-free.
           </p>
           <p class="portfolio-desc">
-            Earlier work included integrating scan data visualization, COM port device
-            communication, and migrating video streaming from Python to .NET.
+            Moved the device video streaming from Python to .NET, and later extended the
+            work to Android tablets. The follow-on work combines these tools into one
+            multi-module inspection suite.
           </p>
+        </div>
+        <div class="portfolio-media">
+          <img src="images/arcs-aviation-1.png" alt="HoloLens 2 view showing floating inspection panels">
         </div>
       </article>
 
-      <!-- 4: Sira Medical -->
-      <article class="portfolio-entry portfolio-entry--reverse">
+      <!-- Sira -->
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/Surgical-Planning-new-image.png" alt="Pre-operative planning tool showing 3D mandible anatomy in AR">
+        </div>
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">HoloLens 2</span>
             <span class="tag">Medical</span>
-            <span class="tag">FDA</span>
           </div>
-          <h2 class="portfolio-title">Sira Medical — Surgical Pre-Operative Planning Tool</h2>
-          <p class="portfolio-subtitle">Unity3D · FDA submission support</p>
+          <h2 class="portfolio-title">Sira Medical pre-operative planning</h2>
+          <p class="portfolio-subtitle">Unity 3D medical viewer · FDA submission</p>
           <p class="portfolio-desc">
-            Took a proof-of-concept Unity project to a functional FDA-compliant surgical
-            pre-operative planning tool for HoloLens 2. Rewrote third-party model-splitting
-            tools to handle 2GB+ medical files, implemented OneDrive OAuth2.0 after Microsoft
-            discontinued UWP support, and assisted with FDA submission documentation.
-          </p>
-          <p class="portfolio-desc">
-            Conducted a metrological study for HoloLens display assessment as part of the
-            FDA approval process.
+            Turned a demo into a Unity 3D medical file viewer for an FDA submission.
+            Rewrote the model-splitting tools to handle 2GB+ files, and supported the
+            submission testing, including a HoloLens metrology study of display brightness
+            and warping.
           </p>
           <div class="portfolio-links">
-            <a href="https://siramedical.com/preoperative-planning/" target="_blank" rel="noopener" class="btn btn-secondary">→ Client Site</a>
-            <a href="https://youtu.be/5HVi_692J3I" target="_blank" rel="noopener" class="btn-demo">▶ CT, MR, DTI Fused Model in AR</a>
-            <a href="https://youtu.be/wkgkXzyu32E" target="_blank" rel="noopener" class="btn-demo">▶ Mandibular Condyle Fracture in AR</a>
+            <a href="https://siramedical.com/preoperative-planning/" target="_blank" rel="noopener" class="btn btn-secondary">→ Client site</a>
+            <a href="https://youtu.be/5HVi_692J3I" target="_blank" rel="noopener" class="btn-demo">CT, MR, DTI fused model in AR</a>
+            <a href="https://youtu.be/wkgkXzyu32E" target="_blank" rel="noopener" class="btn-demo">Mandibular condyle fracture in AR</a>
           </div>
-        </div>
-        <div class="portfolio-media">
-          <img src="images/Surgical-Planning-new-image.png" alt="Sira Medical pre-operative planning tool showing 3D mandibular anatomy in HoloLens AR">
         </div>
       </article>
 
-      <!-- 5: CoralXDS -->
-      <article class="portfolio-entry">
-        <div class="portfolio-media">
-          <img src="images/coralxds-screenshot.png" alt="CoralXDS WPF application showing coral X-ray analysis interface">
-        </div>
-        <div class="portfolio-text">
-          <div class="tags">
-            <span class="tag">.NET 8</span>
-            <span class="tag">WPF</span>
-            <span class="tag">C# 12</span>
-            <span class="tag">Scientific</span>
-            <span class="tag">Arc.dev</span>
-          </div>
-          <h2 class="portfolio-title">CoralXDS — Nova Southeastern University</h2>
-          <p class="portfolio-subtitle">Legacy modernization · Arc.dev contract</p>
-          <p class="portfolio-desc">
-            Migrated a legacy VB6 + Fortran scientific desktop application (CoralXDS) to
-            modern C# 12 / .NET 8 / WPF for Nova Southeastern University's climate research
-            team. The app analyzes X-ray images of coral skeletons to measure growth patterns
-            and density.
-          </p>
-          <p class="portfolio-desc">
-            Built with Math.NET Numerics for scientific computing, ScottPlot for data
-            visualization, and EPPlus for Excel export. MVVM + Dependency Injection
-            architecture, xUnit test suite, 122 C# files.
-          </p>
-        </div>
-      </article>
-
-      <!-- 6: Palantir IC2 -->
+      <!-- Palantir -->
       <article class="portfolio-entry portfolio-entry--reverse">
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Unity</span>
-            <span class="tag">C#</span>
             <span class="tag">Meta Quest</span>
-            <span class="tag">Photon</span>
             <span class="tag">Cesium</span>
-            <span class="tag">XR</span>
+            <span class="tag">Photon</span>
           </div>
-          <h2 class="portfolio-title">Palantir IC2 — Collaborative Map Planning Tool</h2>
+          <h2 class="portfolio-title">Palantir IC2 map planning tool</h2>
           <p class="portfolio-subtitle">Mixed reality · multi-user · Cesium maps</p>
           <p class="portfolio-desc">
-            Developed a collaborative mixed reality map planning application for Meta Quest.
-            Integrated Cesium maps for real-world geospatial data, Photon networking and
-            voice for multi-user sessions, and Meta Spatial Anchors enabling both co-located
-            and remote collaboration.
+            Took an initial demo to a full mixed reality planning app on Meta Quest. Cesium
+            maps, Photon networking and voice, and Meta spatial anchors, so people could
+            plan together in the same room or remotely.
           </p>
           <p class="portfolio-desc">
-            Built custom measurement tools (elevation and distance), developed shaders for
-            map culling, and implemented synchronization through Photon room custom settings.
+            Built the elevation and distance measuring tools, modified shaders for map
+            culling, and synced shared map state through Photon room properties.
           </p>
         </div>
         <div class="portfolio-media">
-          <img src="images/PalantirIC2.jpg" alt="Palantir IC2 collaborative map planning tool on Meta Quest">
+          <img src="images/PalantirIC2.jpg" alt="Collaborative map planning tool on Meta Quest">
         </div>
       </article>
 
-      <!-- 7: AI Customer Support Platform (renumbered — Verbilio removed, not yet released) -->
+      <!-- ===================== Open source ===================== -->
+      <h2 class="work-group-heading">Open source</h2>
+
       <article class="portfolio-entry">
         <div class="portfolio-media">
           <div class="portfolio-media--placeholder">
-            <span class="tag">Python</span>
-            <span class="tag">RAG</span>
-            <span class="tag">LLM</span>
-            <span class="tag">Fine-tuning</span>
+            <span class="placeholder-label">Speech · local LLM</span>
           </div>
         </div>
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Python</span>
-            <span class="tag">LLM</span>
-            <span class="tag">RAG</span>
-            <span class="tag">OpenAI</span>
-            <span class="tag">Claude API</span>
-            <span class="tag">Fine-tuning</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">WhisperX</span>
+            <span class="tag">Pyannote</span>
+            <span class="tag">Ollama</span>
           </div>
-          <h2 class="portfolio-title">AI Customer Support Platform</h2>
-          <p class="portfolio-subtitle">LLM fine-tuning + RAG system</p>
+          <h2 class="portfolio-title">HablaTranslate</h2>
+          <p class="portfolio-subtitle">Self-hosted, real-time Spanish-English speech translator</p>
           <p class="portfolio-desc">
-            Custom chatbot platform built for first-tier game support. Multi-model
-            architecture supporting OpenAI fine-tuned models, Claude API, and local
-            models via LMStudio — switchable via file config with no code changes.
+            A replacement for Google Translate with better idiom handling and context
+            awareness. WhisperX for speech recognition, Silero VAD, Pyannote speaker
+            diarization, and Qwen3 through Ollama for context-aware translation, all running
+            on one RTX 3060. A phone-friendly web client talks to it over WebSocket.
           </p>
-          <p class="portfolio-desc">
-            RAG system with document ingestion, conversation storage, user feedback
-            collection for continuous fine-tuning improvement, and a custom agent
-            layer for automated log gathering and action execution.
-          </p>
+          <div class="portfolio-links">
+            <a href="https://github.com/XRMechSolutions/HablaTranslate" target="_blank" rel="noopener" class="btn btn-secondary">→ GitHub</a>
+          </div>
         </div>
       </article>
 
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">CLIP</span>
+            <span class="tag">InsightFace</span>
+            <span class="tag">EasyOCR</span>
+          </div>
+          <h2 class="portfolio-title">DupliCleaner</h2>
+          <p class="portfolio-subtitle">Duplicate finder and AI photo organizer for NAS and local drives</p>
+          <p class="portfolio-desc">
+            Exact duplicates by SHA-256 and near-duplicates by perceptual hashing, matched
+            across JPEG, PNG and HEIC. Local vision models (YOLOv8, CLIP, InsightFace face
+            recognition, EasyOCR) summarize image contents, identify people across family
+            photos and suggest tags.
+          </p>
+          <p class="portfolio-desc">
+            Quarantine mode with an audit log and full undo. It never deletes anything on its own.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://github.com/XRMechSolutions/NAS-Duplicate-Cleanup-Tool" target="_blank" rel="noopener" class="btn btn-secondary">→ GitHub</a>
+          </div>
+        </div>
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Vision · photo analysis</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Web Audio · PWA</span>
+          </div>
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Svelte 5</span>
+            <span class="tag">Web Audio</span>
+            <span class="tag">AudioWorklet</span>
+          </div>
+          <h2 class="portfolio-title">Entrain</h2>
+          <p class="portfolio-subtitle">Binaural beats and breath-paced sessions · live</p>
+          <p class="portfolio-desc">
+            Offline web app for binaural beats, isochronic tones and breath-paced sessions.
+            All audio is made live with Web Audio and an AudioWorklet, with a per-node
+            automation timeline and modulators on any parameter. Installable, and deployed
+            to GitHub Pages by GitHub Actions.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://xrmechsolutions.github.io/Entrain/" target="_blank" rel="noopener" class="btn btn-primary">→ Try it live</a>
+            <a href="https://github.com/XRMechSolutions/Entrain" target="_blank" rel="noopener" class="btn btn-secondary">→ GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C++</span>
+            <span class="tag">WebRTC</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">FFmpeg</span>
+          </div>
+          <h2 class="portfolio-title">Scene-Recorder</h2>
+          <p class="portfolio-subtitle">Multi-camera capture for Unity · prototype, paused</p>
+          <p class="portfolio-desc">
+            Captures and streams multiple cameras from Unity using AsyncGPUReadback and
+            native C++ encoding on Windows and Android (JNI), with a WebRTC streaming path.
+            A Node.js server stores frames and builds videos with FFmpeg. Built for gameplay
+            highlight clips in location-based VR.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://github.com/XRMech/Scene-Recorder" target="_blank" rel="noopener" class="btn btn-secondary">→ Scene-Recorder</a>
+            <a href="https://github.com/XRMech/SceneStreamServer" target="_blank" rel="noopener" class="btn-demo">→ SceneStreamServer</a>
+          </div>
+        </div>
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Unity · native capture</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== Products ===================== -->
+      <h2 class="work-group-heading">Products</h2>
+
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <img src="images/storytime-screenshot.png" alt="StoryTime Language app showing the Create a Story screen">
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Kotlin Multiplatform</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">LLMs</span>
+          </div>
+          <h2 class="portfolio-title">StoryTime Language</h2>
+          <p class="portfolio-subtitle">Live on Google Play</p>
+          <p class="portfolio-desc">
+            AI story app for language learners in 100 languages: stories at your level,
+            tap-to-translate words, and stories you can switch to another language. Kotlin
+            Multiplatform and Jetpack Compose, with a Node.js backend that falls back across
+            OpenAI, Anthropic and Gemini.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://play.google.com/store/apps/details?id=com.xrmech.storytimelanguage" target="_blank" rel="noopener" class="btn btn-secondary">→ Google Play</a>
+            <a href="https://storytimelanguage.com" target="_blank" rel="noopener" class="btn-demo">→ Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===================== Boeing ===================== -->
+      <h2 class="work-group-heading">Before XR: Boeing, 2013 – 2021</h2>
+
+      <article class="portfolio-entry portfolio-entry--reverse">
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">OpenCV</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">ABB RobotStudio</span>
+            <span class="tag">FANUC ROBOGUIDE</span>
+          </div>
+          <h2 class="portfolio-title">Robotics and manufacturing R&amp;D</h2>
+          <p class="portfolio-subtitle">Programmer/Analyst Robotics, then Materials/Structures/Assembly Engineer R&amp;D</p>
+          <ul class="portfolio-list">
+            <li>Built an OpenCV system to find tube orientation and measure bends for quality checks</li>
+            <li>Developed the test process and equipment behind a patented interim temper process for 7075 aluminum (US 11,603,586 B2)</li>
+            <li>AR tool-tracking trials: a Bluetooth torque wrench with AR feedback, tracked with HTC Vive trackers</li>
+            <li>Application product manager for Boeing's ABB RobotStudio and FANUC ROBOGUIDE offline-programming software</li>
+            <li>Led the Boeing Robotics Community of Practice across 3 sites</li>
+            <li>Integrated an ATOS 3D scanner onto a robot, with automated scanning routines for NC programmers</li>
+          </ul>
+          <div class="portfolio-links">
+            <a href="https://patents.google.com/patent/US11603586B2" target="_blank" rel="noopener" class="btn-demo">→ Patent</a>
+          </div>
+        </div>
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Factory floor</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Want the details behind any of these?</h2>
+      <p>Client specifics stay under NDA, but I'm happy to talk through the engineering.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      </div>
     </div>
   </section>
 
@@ -285,8 +427,8 @@
     <div class="container">
       <img src="images/XR Mech Logo Transparent Long.png" alt="XR Mech" class="footer-logo">
       <div class="footer-links">
-        <a href="https://github.com/xrmech" target="_blank" rel="noopener">github.com/xrmech</a>
-        <a href="https://linkedin.com/in/clintjcampbell" target="_blank" rel="noopener">linkedin.com/in/clintjcampbell</a>
+        <a href="https://github.com/XRMech" target="_blank" rel="noopener">github.com/XRMech</a>
+        <a href="https://www.linkedin.com/in/clintjcampbell" target="_blank" rel="noopener">linkedin.com/in/clintjcampbell</a>
         <a href="mailto:xrmechsolutions@gmail.com">xrmechsolutions@gmail.com</a>
       </div>
       <p class="footer-copy">&copy;2026 Clint Campbell</p>
