@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261014">
+  <link rel="stylesheet" href="css/style.css?v=20261109">
 </head>
 <body>
 
@@ -231,12 +231,44 @@
       <!-- ===================== Open source ===================== -->
       <h2 class="work-group-heading">Open source</h2>
 
+      <!-- SiftFetch -->
       <article class="portfolio-entry">
         <div class="portfolio-media">
-          <div class="portfolio-media--placeholder">
-            <span class="placeholder-label">Speech · local LLM</span>
+          <iframe class="portfolio-media--portrait" src="https://www.youtube-nocookie.com/embed/0k-a3HKuK7M" title="SiftFetch: a hidden instruction vs. what the AI agent sees" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="portfolio-text">
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">MCP server</span>
+            <span class="tag">Claude Code</span>
+            <span class="tag">Codex</span>
+            <span class="tag">Agent security</span>
+          </div>
+          <h2 class="portfolio-title">SiftFetch</h2>
+          <p class="portfolio-subtitle">Web-content guard for AI agents · early release 0.1</p>
+          <p class="portfolio-desc">
+            Sits between AI coding agents and the web. Pages arrive as readable text instead
+            of raw HTML, with text hidden from human readers labelled, instructions aimed at
+            the agent flagged and risk-graded, and the whole page fenced off as untrusted
+            content. Outgoing searches and URLs are checked so listed personal details don't
+            leave in them.
+          </p>
+          <p class="portfolio-desc">
+            Runs as an MCP server and as Claude Code and Codex hooks; my own agents' web
+            access has gone through it daily since late October 2026. On the project's own
+            benchmark it grades 69 of 70 attacks as expected and none of 43 normal pages as
+            medium or higher; on an unseen set it caught 14 of 49, so treat the first number
+            as a ceiling. It's a heuristic, not a sandbox.
+          </p>
+          <div class="portfolio-links">
+            <a href="https://github.com/XRMech/siftfetch" target="_blank" rel="noopener" class="btn btn-secondary">→ GitHub</a>
+            <a href="https://youtu.be/0k-a3HKuK7M" target="_blank" rel="noopener" class="btn-demo">Watch on YouTube</a>
           </div>
         </div>
+      </article>
+
+      <!-- HablaTranslate -->
+      <article class="portfolio-entry portfolio-entry--reverse">
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Python</span>
@@ -259,7 +291,12 @@
         </div>
       </article>
 
-      <article class="portfolio-entry portfolio-entry--reverse">
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Vision · photo analysis</span>
+          </div>
+        </div>
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Python</span>
@@ -283,14 +320,9 @@
             <a href="https://github.com/XRMechSolutions/NAS-Duplicate-Cleanup-Tool" target="_blank" rel="noopener" class="btn btn-secondary">→ GitHub</a>
           </div>
         </div>
-        <div class="portfolio-media">
-          <div class="portfolio-media--placeholder">
-            <span class="placeholder-label">Vision · photo analysis</span>
-          </div>
-        </div>
       </article>
 
-      <article class="portfolio-entry">
+      <article class="portfolio-entry portfolio-entry--reverse">
         <div class="portfolio-media">
           <img src="images/entrain-editor.jpg" alt="Entrain session editor with carrier and beat frequency controls and an automation timeline">
         </div>
@@ -316,7 +348,12 @@
         </div>
       </article>
 
-      <article class="portfolio-entry portfolio-entry--reverse">
+      <article class="portfolio-entry">
+        <div class="portfolio-media">
+          <div class="portfolio-media--placeholder">
+            <span class="placeholder-label">Unity · native capture</span>
+          </div>
+        </div>
         <div class="portfolio-text">
           <div class="tags">
             <span class="tag">Unity</span>
@@ -338,11 +375,6 @@
             <a href="https://github.com/XRMech/SceneStreamServer" target="_blank" rel="noopener" class="btn-demo">→ SceneStreamServer</a>
           </div>
         </div>
-        <div class="portfolio-media">
-          <div class="portfolio-media--placeholder">
-            <span class="placeholder-label">Unity · native capture</span>
-          </div>
-        </div>
       </article>
 
       <!-- ===================== Products ===================== -->
@@ -350,7 +382,7 @@
 
       <article class="portfolio-entry">
         <div class="portfolio-media">
-          <img src="images/storytime-screenshot.png" alt="StoryTime Language app showing the Create a Story screen">
+          <iframe src="https://www.youtube-nocookie.com/embed/eDngAOH2KB4" title="Why I built StoryTime Language: AI stories for language learners" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="portfolio-text">
           <div class="tags">
@@ -370,6 +402,7 @@
           <div class="portfolio-links">
             <a href="https://play.google.com/store/apps/details?id=com.xrmech.storytimelanguage" target="_blank" rel="noopener" class="btn btn-secondary">→ Google Play</a>
             <a href="https://storytimelanguage.com" target="_blank" rel="noopener" class="btn-demo">→ Website</a>
+            <a href="https://youtu.be/eDngAOH2KB4" target="_blank" rel="noopener" class="btn-demo">Why I built it (video)</a>
           </div>
         </div>
       </article>

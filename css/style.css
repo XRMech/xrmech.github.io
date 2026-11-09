@@ -356,6 +356,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
+.portfolio-media iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background: var(--color-dark);
+}
+.portfolio-media iframe.portfolio-media--portrait {
+  aspect-ratio: 4 / 5;
+  max-width: 340px;
+  margin: 0 auto;
+}
 .portfolio-media--placeholder {
   width: 100%;
   min-height: 220px;
